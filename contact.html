@@ -1,27 +1,3 @@
-<!--
-session_start();
-if(isset($_REQUEST['submitBtn']))
-{	
- $name=$_REQUEST['name'];
- $email=$_REQUEST['email'];
- $query=$_REQUEST['query'];
- $mobile=$_REQUEST['mobile'];
- 
-
-	$to = 'm.ratneshwar@gmail.com';
-	$subject = 'Enquiry Form';
-	$message = "Name :- $name \n\n  Email :- $email \n\n Query :- $query  \n\n mobile :- $mobile ";
-	$headers = "From: $email" . "\r\n" .
-		"Reply-To: $email" . "\r\n" .
-		'X-Mailer: PHP/' . phpversion();	
-		@mail($to, $subject, $message, $headers);
-		
-		$errmsg_arr[] = 'Mail Sent Successfully.';
-		$_SESSION['ERRMSG_ARR'] = $errmsg_arr;		
-		header("location: contact.php");
-}		
-*/ -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
